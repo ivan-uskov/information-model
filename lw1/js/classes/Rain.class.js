@@ -1,0 +1,3 @@
+var Rain = Base.extend({
+
+});
