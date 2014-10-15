@@ -2,54 +2,50 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ed71da56-1c6c-4f36-b6d2-ca319fbd80d6" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lw1/js/classes/Context.class.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lw1/js/classes/ContextBuilder.class.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lw1/js/classes/ElementInterface.class.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lw1/js/classes/locality/LocalityElement.class.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lw1/js/classes/locality/LocalityFactory.class.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lw1/js/classes/locality/Mountain.class.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lw1/js/classes/locality/Plain.class.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lw1/js/classes/weather/Rain.class.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lw1/js/classes/locality/River.class.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lw1/js/classes/weather/Sun.class.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lw1/js/classes/weather/WeatherElement.class.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lw1/css/grass.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lw1/css/mountain.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lw1/css/plain.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lw1/css/rain.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lw1/css/river.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lw1/css/sun.css" />
-      <change type="DELETED" beforePath="D:\dev\PS\information-model\lw1\img\moutine.jpg" afterPath="" />
-      <change type="DELETED" beforePath="D:\dev\PS\information-model\lw1\img\plain.jpg" afterPath="" />
-      <change type="DELETED" beforePath="D:\dev\PS\information-model\lw1\js\classes\Rain.class.js" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lw1/js/IndexPage.js" afterPath="$PROJECT_DIR$/lw1/js/IndexPage.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lw1/js/classes/object/Grass.class.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lw1/js/classes/object/ObjectElement.class.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lw1/js/classes/weather/WeatherRandom.class.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lw1/js/classes/Context.class.js" afterPath="$PROJECT_DIR$/lw1/js/classes/Context.class.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lw1/js/classes/ContextBuilder.class.js" afterPath="$PROJECT_DIR$/lw1/js/classes/ContextBuilder.class.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lw1/js/classes/locality/LocalityElement.class.js" afterPath="$PROJECT_DIR$/lw1/js/classes/locality/LocalityElement.class.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lw1/js/classes/locality/Plain.class.js" afterPath="$PROJECT_DIR$/lw1/js/classes/locality/Plain.class.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lw1/js/classes/weather/Sun.class.js" afterPath="$PROJECT_DIR$/lw1/js/classes/weather/Sun.class.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lw1/js/classes/weather/WeatherElement.class.js" afterPath="$PROJECT_DIR$/lw1/js/classes/weather/WeatherElement.class.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lw1/css/grass.css" afterPath="$PROJECT_DIR$/lw1/css/grass.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lw1/index.html" afterPath="$PROJECT_DIR$/lw1/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lw1/css/main.css" afterPath="$PROJECT_DIR$/lw1/css/main.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lw1/css/plain.css" afterPath="$PROJECT_DIR$/lw1/css/plain.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lw1/css/rain.css" afterPath="$PROJECT_DIR$/lw1/css/rain.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lw1/css/sun.css" afterPath="$PROJECT_DIR$/lw1/css/sun.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="information-model.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="ed71da56-1c6c-4f36-b6d2-ca319fbd80d6" time="1413291435614" ignored="false" />
-    <file path="/index.html" changelist="ed71da56-1c6c-4f36-b6d2-ca319fbd80d6" time="1413313057583" ignored="false" />
+    <file path="/Dummy.txt" changelist="ed71da56-1c6c-4f36-b6d2-ca319fbd80d6" time="1413387783369" ignored="false" />
+    <file path="/index.html" changelist="ed71da56-1c6c-4f36-b6d2-ca319fbd80d6" time="1413401097276" ignored="false" />
     <file path="/Rain.class.js" changelist="ed71da56-1c6c-4f36-b6d2-ca319fbd80d6" time="1413292866692" ignored="false" />
     <file path="/IndexPage.js" changelist="ed71da56-1c6c-4f36-b6d2-ca319fbd80d6" time="1413307111085" ignored="false" />
     <file path="/main.css" changelist="ed71da56-1c6c-4f36-b6d2-ca319fbd80d6" time="1413313170461" ignored="false" />
-    <file path="/WeatherElement.class.js" changelist="ed71da56-1c6c-4f36-b6d2-ca319fbd80d6" time="1413299538372" ignored="false" />
-    <file path="/Sun.class.js" changelist="ed71da56-1c6c-4f36-b6d2-ca319fbd80d6" time="1413312512603" ignored="false" />
-    <file path="/ElementInterface.class.js" changelist="ed71da56-1c6c-4f36-b6d2-ca319fbd80d6" time="1413312334323" ignored="false" />
-    <file path="/LocalityElement.class.js" changelist="ed71da56-1c6c-4f36-b6d2-ca319fbd80d6" time="1413312771871" ignored="false" />
+    <file path="/WeatherElement.class.js" changelist="ed71da56-1c6c-4f36-b6d2-ca319fbd80d6" time="1413403734435" ignored="false" />
+    <file path="/Sun.class.js" changelist="ed71da56-1c6c-4f36-b6d2-ca319fbd80d6" time="1413392544508" ignored="false" />
+    <file path="/ElementInterface.class.js" changelist="ed71da56-1c6c-4f36-b6d2-ca319fbd80d6" time="1413399336122" ignored="false" />
+    <file path="/LocalityElement.class.js" changelist="ed71da56-1c6c-4f36-b6d2-ca319fbd80d6" time="1413402267390" ignored="false" />
     <file path="/River.class.js" changelist="ed71da56-1c6c-4f36-b6d2-ca319fbd80d6" time="1413310498626" ignored="false" />
-    <file path="/Plain.class.js" changelist="ed71da56-1c6c-4f36-b6d2-ca319fbd80d6" time="1413306751648" ignored="false" />
+    <file path="/Plain.class.js" changelist="ed71da56-1c6c-4f36-b6d2-ca319fbd80d6" time="1413405806072" ignored="false" />
     <file path="/Mountain.class.js" changelist="ed71da56-1c6c-4f36-b6d2-ca319fbd80d6" time="1413310540204" ignored="false" />
-    <file path="/ContextBuilder.class.js" changelist="ed71da56-1c6c-4f36-b6d2-ca319fbd80d6" time="1413311878755" ignored="false" />
-    <file path="/Context.class.js" changelist="ed71da56-1c6c-4f36-b6d2-ca319fbd80d6" time="1413309858441" ignored="false" />
+    <file path="/ContextBuilder.class.js" changelist="ed71da56-1c6c-4f36-b6d2-ca319fbd80d6" time="1413399111939" ignored="false" />
+    <file path="/Context.class.js" changelist="ed71da56-1c6c-4f36-b6d2-ca319fbd80d6" time="1413395320513" ignored="false" />
     <file path="/LocalityFactory.class.js" changelist="ed71da56-1c6c-4f36-b6d2-ca319fbd80d6" time="1413309133791" ignored="false" />
     <file path="/dummy.txt" changelist="ed71da56-1c6c-4f36-b6d2-ca319fbd80d6" time="1413309896611" ignored="false" />
     <file path="/mountain.css" changelist="ed71da56-1c6c-4f36-b6d2-ca319fbd80d6" time="1413311146403" ignored="false" />
     <file path="/river.css" changelist="ed71da56-1c6c-4f36-b6d2-ca319fbd80d6" time="1413311238115" ignored="false" />
     <file path="/plain.css" changelist="ed71da56-1c6c-4f36-b6d2-ca319fbd80d6" time="1413311295606" ignored="false" />
-    <file path="/sun.css" changelist="ed71da56-1c6c-4f36-b6d2-ca319fbd80d6" time="1413313024475" ignored="false" />
-    <file path="/rain.css" changelist="ed71da56-1c6c-4f36-b6d2-ca319fbd80d6" time="1413313155335" ignored="false" />
+    <file path="/sun.css" changelist="ed71da56-1c6c-4f36-b6d2-ca319fbd80d6" time="1413391661890" ignored="false" />
+    <file path="/rain.css" changelist="ed71da56-1c6c-4f36-b6d2-ca319fbd80d6" time="1413391769540" ignored="false" />
+    <file path="/ObjectElement.class.js" changelist="ed71da56-1c6c-4f36-b6d2-ca319fbd80d6" time="1413400135190" ignored="false" />
+    <file path="/Grass.class.js" changelist="ed71da56-1c6c-4f36-b6d2-ca319fbd80d6" time="1413405649755" ignored="false" />
+    <file path="/WeatherRandom.class.js" changelist="ed71da56-1c6c-4f36-b6d2-ca319fbd80d6" time="1413402187561" ignored="false" />
+    <file path="/a.dummy" changelist="ed71da56-1c6c-4f36-b6d2-ca319fbd80d6" time="1413401728703" ignored="false" />
+    <file path="/grass.css" changelist="ed71da56-1c6c-4f36-b6d2-ca319fbd80d6" time="1413402614591" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,7 +64,53 @@
     <favorites_list name="information-model" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file leaf-file-name="Plain.class.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lw1/js/classes/locality/Plain.class.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="26" column="28" selection-start="573" selection-end="573" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Context.class.js" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/lw1/js/classes/Context.class.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="41" column="20" selection-start="959" selection-end="959" vertical-scroll-proportion="0.76762116">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LocalityElement.class.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lw1/js/classes/locality/LocalityElement.class.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="32" column="4" selection-start="806" selection-end="806" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Grass.class.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lw1/js/classes/object/Grass.class.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="59" column="0" selection-start="1407" selection-end="1407" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="grass.css" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lw1/css/grass.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="6" selection-start="1" selection-end="6" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -83,28 +125,25 @@
       <MyDateState />
     </option>
   </component>
-  <component name="HighlightingSettingsPerFile">
-    <setting file="mock:///dummy.txt" root0="SKIP_INSPECTION" />
-  </component>
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/lw1/js/classes/locality/River.class.js" />
-        <option value="$PROJECT_DIR$/lw1/js/classes/locality/Plain.class.js" />
-        <option value="$PROJECT_DIR$/lw1/js/classes/locality/Mountain.class.js" />
-        <option value="$PROJECT_DIR$/lw1/css/mountain.css" />
-        <option value="$PROJECT_DIR$/lw1/css/river.css" />
-        <option value="$PROJECT_DIR$/lw1/css/plain.css" />
-        <option value="$PROJECT_DIR$/lw1/js/classes/ContextBuilder.class.js" />
-        <option value="$PROJECT_DIR$/lw1/js/classes/weather/Sun.class.js" />
-        <option value="$PROJECT_DIR$/lw1/js/classes/locality/LocalityElement.class.js" />
-        <option value="$PROJECT_DIR$/lw1/js/classes/weather/WeatherElement.class.js" />
-        <option value="$PROJECT_DIR$/lw1/js/classes/weather/Rain.class.js" />
-        <option value="$PROJECT_DIR$/lw1/js/classes/ElementInterface.class.js" />
-        <option value="$PROJECT_DIR$/lw1/index.html" />
+        <option value="$PROJECT_DIR$/lw1/css/main.css" />
         <option value="$PROJECT_DIR$/lw1/css/sun.css" />
         <option value="$PROJECT_DIR$/lw1/css/rain.css" />
-        <option value="$PROJECT_DIR$/lw1/css/main.css" />
+        <option value="$PROJECT_DIR$/lw1/js/classes/ContextBuilder.class.js" />
+        <option value="$PROJECT_DIR$/lw1/js/classes/ElementInterface.class.js" />
+        <option value="$PROJECT_DIR$/lw1/index.html" />
+        <option value="$PROJECT_DIR$/lw1/js/classes/weather/WeatherRandom.class.js" />
+        <option value="$PROJECT_DIR$/lw1/js/classes/object/ObjectElement.class.js" />
+        <option value="$PROJECT_DIR$/lw1/css/plain.css" />
+        <option value="$PROJECT_DIR$/lw1/css/grass.css" />
+        <option value="$PROJECT_DIR$/lw1/js/classes/weather/Sun.class.js" />
+        <option value="$PROJECT_DIR$/lw1/js/classes/weather/WeatherElement.class.js" />
+        <option value="$PROJECT_DIR$/lw1/js/classes/object/Grass.class.js" />
+        <option value="$PROJECT_DIR$/lw1/js/classes/locality/LocalityElement.class.js" />
+        <option value="$PROJECT_DIR$/lw1/js/classes/locality/Plain.class.js" />
+        <option value="$PROJECT_DIR$/lw1/js/classes/Context.class.js" />
       </list>
     </option>
   </component>
@@ -261,6 +300,32 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="object" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="information-model" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="information-model" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lw1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="classes" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="locality" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -312,8 +377,9 @@
     <property name="options.lastSelected" value="project.propVCSSupport.Mappings" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="FullScreen" value="false" />
-    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="GoToClass.includeJavaFiles" value="false" />
     <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -363,22 +429,22 @@
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32905984" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25320512" sideWeight="0.67094016" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25641027" sideWeight="0.67094016" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Command Line Tools Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32905984" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Command Line Tools Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32905984" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -442,114 +508,112 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/lw1/css/mountain.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="1" selection-start="75" selection-end="75" vertical-scroll-proportion="0.0561674">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lw1/css/grass.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lw1/js/classes/locality/River.class.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="43" selection-start="202" selection-end="212" vertical-scroll-proportion="0.2246696">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lw1/js/classes/ContextBuilder.class.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="73" column="5" selection-start="2174" selection-end="2174" vertical-scroll-proportion="0.8876652">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lw1/js/classes/locality/Plain.class.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="43" selection-start="201" selection-end="211" vertical-scroll-proportion="0.2246696">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lw1/js/classes/locality/Mountain.class.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="46" selection-start="208" selection-end="221" vertical-scroll-proportion="0.2246696">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lw1/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="57" selection-start="662" selection-end="662" vertical-scroll-proportion="-7.1923075">
+        <state line="21" column="83" selection-start="1533" selection-end="1533" vertical-scroll-proportion="0.4047619">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lw1/css/main.css">
+    <entry file="file://$PROJECT_DIR$/lw1/js/classes/weather/WeatherRandom.class.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="50" column="14" selection-start="604" selection-end="604" vertical-scroll-proportion="0.8314978">
+        <state line="11" column="19" selection-start="187" selection-end="187" vertical-scroll-proportion="0.20594713">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lw1/img/grass_sprite.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lw1/css/plain.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="0" selection-start="14" selection-end="14" vertical-scroll-proportion="0.037444934">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lw1/css/rain.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="5" selection-start="5" selection-end="5" vertical-scroll-proportion="0.0">
+        <state line="5" column="11" selection-start="78" selection-end="78" vertical-scroll-proportion="0.093612336">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lw1/css/sun.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="11" selection-start="75" selection-end="75" vertical-scroll-proportion="0.093612336">
+        <state line="27" column="28" selection-start="343" selection-end="343" vertical-scroll-proportion="0.50550663">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lw1/js/classes/ElementInterface.class.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="0" selection-start="393" selection-end="393" vertical-scroll-proportion="0.4680617">
+        <state line="0" column="4" selection-start="4" selection-end="4" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lw1/js/classes/weather/WeatherElement.class.js">
+    <entry file="file://$PROJECT_DIR$/lw1/js/classes/object/ObjectElement.class.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="36" selection-start="36" selection-end="36" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lw1/js/classes/weather/Sun.class.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="5" selection-start="113" selection-end="113" vertical-scroll-proportion="0.093612336">
+        <state line="0" column="26" selection-start="26" selection-end="26" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lw1/js/classes/weather/Rain.class.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="0" selection-start="73" selection-end="73" vertical-scroll-proportion="0.0561674">
+        <state line="0" column="20" selection-start="20" selection-end="20" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lw1/js/classes/weather/Sun.class.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="23" selection-start="160" selection-end="160" vertical-scroll-proportion="0.18722467">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lw1/js/classes/weather/WeatherElement.class.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="32" column="0" selection-start="742" selection-end="944" vertical-scroll-proportion="0.31828195">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lw1/css/grass.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="6" selection-start="1" selection-end="6" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lw1/js/classes/object/Grass.class.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="59" column="0" selection-start="1407" selection-end="1407" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lw1/js/classes/locality/LocalityElement.class.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="24" selection-start="250" selection-end="250" vertical-scroll-proportion="0.24339207">
+        <state line="32" column="4" selection-start="806" selection-end="806" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lw1/js/IndexPage.js">
+    <entry file="file://$PROJECT_DIR$/lw1/js/classes/locality/Plain.class.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="38" selection-start="427" selection-end="427" vertical-scroll-proportion="0.3370044">
+        <state line="26" column="28" selection-start="573" selection-end="573" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lw1/js/classes/Context.class.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="41" column="20" selection-start="959" selection-end="959" vertical-scroll-proportion="0.76762116">
           <folding />
         </state>
       </provider>

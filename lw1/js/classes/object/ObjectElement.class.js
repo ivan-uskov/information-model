@@ -1,0 +1,3 @@
+var ObjectElement = ElementInterface.extend({
+
+});

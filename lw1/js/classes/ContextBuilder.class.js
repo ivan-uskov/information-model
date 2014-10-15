@@ -1,6 +1,8 @@
 var ContextBuilder = Base.extend({
     //TODO: CodeReview and Refactor
     _container: null,
+    _xLength:   null,
+    _yLength:   null,
 
     constructor: function(container)
     {
@@ -9,6 +11,8 @@ var ContextBuilder = Base.extend({
 
     renderContext: function(islandMapArray)
     {
+        this._yLength = islandMapArray.length;
+        this._xLength = islandMapArray[0].length;
         var content = [];
         for (var lineId = 0; lineId < islandMapArray.length; lineId++)
         {
@@ -55,7 +59,7 @@ var ContextBuilder = Base.extend({
 
     _getIdPostfixByPosition: function(lineId, eltId)
     {
-        return lineId * 10 + eltId;
+        return lineId * this._xLength + eltId;
     },
 
     _initElements: function(elements)

@@ -1,10 +1,10 @@
 var Sun = WeatherElement.extend({
 
+
     constructor: function(elementId)
     {
         this.base(elementId);
     }
-
 },
 {
     TYPE: 'Sun',

@@ -1,9 +1,29 @@
 .rain
 {
-    width: 25%;
-    height: 25%;
+    width: 68px;
+    height: 38px;
     position: absolute;
     top: 0;
     left: 0;
-    background: blue;
+    background: url('../img/rain_sprite.png') 0 0;
+}
+
+.rain.size0
+{
+    background-position: 0 0;
+}
+
+.rain.size1
+{
+    background-position: 0 -38px;
+}
+
+.rain.size2
+{
+    background-position: 0 -76px;
+}
+
+.rain.size3
+{
+    background-position: 0 -114px;
 }

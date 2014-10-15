@@ -1,9 +1,29 @@
 .sun
 {
-    width: 25%;
-    height: 25%;
+    width: 68px;
+    height: 68px;
     position: absolute;
     top: 0;
     right: 0;
-    background: red;
+    background: url('../img/sun_sprite.png') no-repeat 0 0;
+}
+
+.sun.size0
+{
+    background-position: 0 0;
+}
+
+.sun.size1
+{
+    background-position: 0 -68px;
+}
+
+.sun.size2
+{
+    background-position: 0 -136px;
+}
+
+.sun.size3
+{
+    background-position: 0 -204px;
 }
