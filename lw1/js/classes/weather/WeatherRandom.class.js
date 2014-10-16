@@ -9,7 +9,7 @@ var WeatherRandom = Base.extend({
         RAIN_DECREASE: 3
     },
 
-    EVENTS_TOP_BORDER: 3, //length of EVENTS
+    EVENTS_TOP_BORDER: 4, //length of EVENTS
 
     getRandomEvent: function()
     {
