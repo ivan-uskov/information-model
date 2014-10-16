@@ -2,28 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ed71da56-1c6c-4f36-b6d2-ca319fbd80d6" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lw1/js/classes/object/Grass.class.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lw1/js/classes/object/ObjectElement.class.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lw1/js/classes/weather/WeatherRandom.class.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lw1/js/classes/Context.class.js" afterPath="$PROJECT_DIR$/lw1/js/classes/Context.class.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lw1/js/classes/ContextBuilder.class.js" afterPath="$PROJECT_DIR$/lw1/js/classes/ContextBuilder.class.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lw1/js/classes/locality/LocalityElement.class.js" afterPath="$PROJECT_DIR$/lw1/js/classes/locality/LocalityElement.class.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lw1/js/classes/locality/Plain.class.js" afterPath="$PROJECT_DIR$/lw1/js/classes/locality/Plain.class.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lw1/js/classes/weather/Sun.class.js" afterPath="$PROJECT_DIR$/lw1/js/classes/weather/Sun.class.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lw1/js/classes/weather/WeatherElement.class.js" afterPath="$PROJECT_DIR$/lw1/js/classes/weather/WeatherElement.class.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lw1/css/grass.css" afterPath="$PROJECT_DIR$/lw1/css/grass.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lw1/index.html" afterPath="$PROJECT_DIR$/lw1/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lw1/css/plain.css" afterPath="$PROJECT_DIR$/lw1/css/plain.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lw1/css/rain.css" afterPath="$PROJECT_DIR$/lw1/css/rain.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lw1/css/sun.css" afterPath="$PROJECT_DIR$/lw1/css/sun.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lw1/js/IndexPage.js" afterPath="$PROJECT_DIR$/lw1/js/IndexPage.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lw1/css/main.css" afterPath="$PROJECT_DIR$/lw1/css/main.css" />
     </list>
     <ignored path="information-model.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="ed71da56-1c6c-4f36-b6d2-ca319fbd80d6" time="1413387783369" ignored="false" />
+    <file path="/Dummy.txt" changelist="ed71da56-1c6c-4f36-b6d2-ca319fbd80d6" time="1413466807570" ignored="false" />
     <file path="/index.html" changelist="ed71da56-1c6c-4f36-b6d2-ca319fbd80d6" time="1413401097276" ignored="false" />
     <file path="/Rain.class.js" changelist="ed71da56-1c6c-4f36-b6d2-ca319fbd80d6" time="1413292866692" ignored="false" />
-    <file path="/IndexPage.js" changelist="ed71da56-1c6c-4f36-b6d2-ca319fbd80d6" time="1413307111085" ignored="false" />
+    <file path="/IndexPage.js" changelist="ed71da56-1c6c-4f36-b6d2-ca319fbd80d6" time="1413467786431" ignored="false" />
     <file path="/main.css" changelist="ed71da56-1c6c-4f36-b6d2-ca319fbd80d6" time="1413313170461" ignored="false" />
     <file path="/WeatherElement.class.js" changelist="ed71da56-1c6c-4f36-b6d2-ca319fbd80d6" time="1413403734435" ignored="false" />
     <file path="/Sun.class.js" changelist="ed71da56-1c6c-4f36-b6d2-ca319fbd80d6" time="1413392544508" ignored="false" />
@@ -68,25 +55,7 @@
       <file leaf-file-name="Plain.class.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lw1/js/classes/locality/Plain.class.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="26" column="28" selection-start="573" selection-end="573" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Context.class.js" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/lw1/js/classes/Context.class.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="41" column="20" selection-start="959" selection-end="959" vertical-scroll-proportion="0.76762116">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="LocalityElement.class.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lw1/js/classes/locality/LocalityElement.class.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="32" column="4" selection-start="806" selection-end="806" vertical-scroll-proportion="0.0">
+            <state line="12" column="41" selection-start="237" selection-end="237" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -101,10 +70,28 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="grass.css" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lw1/css/grass.css">
+      <file leaf-file-name="LocalityElement.class.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lw1/js/classes/locality/LocalityElement.class.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="6" selection-start="1" selection-end="6" vertical-scroll-proportion="0.0">
+            <state line="59" column="0" selection-start="1563" selection-end="1563" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="IndexPage.js" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/lw1/js/IndexPage.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="18" column="38" selection-start="617" selection-end="617" vertical-scroll-proportion="0.3370044">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Context.class.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lw1/js/classes/Context.class.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="26" column="28" selection-start="696" selection-end="696" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -128,8 +115,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/lw1/css/main.css" />
-        <option value="$PROJECT_DIR$/lw1/css/sun.css" />
         <option value="$PROJECT_DIR$/lw1/css/rain.css" />
         <option value="$PROJECT_DIR$/lw1/js/classes/ContextBuilder.class.js" />
         <option value="$PROJECT_DIR$/lw1/js/classes/ElementInterface.class.js" />
@@ -144,6 +129,8 @@
         <option value="$PROJECT_DIR$/lw1/js/classes/locality/LocalityElement.class.js" />
         <option value="$PROJECT_DIR$/lw1/js/classes/locality/Plain.class.js" />
         <option value="$PROJECT_DIR$/lw1/js/classes/Context.class.js" />
+        <option value="$PROJECT_DIR$/lw1/css/main.css" />
+        <option value="$PROJECT_DIR$/lw1/js/IndexPage.js" />
       </list>
     </option>
   </component>
@@ -180,6 +167,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -368,7 +356,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -377,9 +364,9 @@
     <property name="options.lastSelected" value="project.propVCSSupport.Mappings" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="FullScreen" value="false" />
-    <property name="GoToClass.includeJavaFiles" value="false" />
-    <property name="options.searchVisible" value="true" />
     <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
+    <property name="GoToClass.includeJavaFiles" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -425,14 +412,13 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32905984" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25641027" sideWeight="0.67094016" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2596154" sideWeight="0.67094016" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -441,6 +427,7 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32905984" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -508,20 +495,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/lw1/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="83" selection-start="1533" selection-end="1533" vertical-scroll-proportion="0.4047619">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lw1/js/classes/weather/WeatherRandom.class.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="19" selection-start="187" selection-end="187" vertical-scroll-proportion="0.20594713">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lw1/img/grass_sprite.png">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -529,23 +502,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/lw1/css/plain.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="0" selection-start="14" selection-end="14" vertical-scroll-proportion="0.037444934">
-          <folding />
-        </state>
+        <state line="2" column="0" selection-start="14" selection-end="14" vertical-scroll-proportion="0.037444934" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lw1/css/rain.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="11" selection-start="78" selection-end="78" vertical-scroll-proportion="0.093612336">
-          <folding />
-        </state>
+        <state line="5" column="11" selection-start="78" selection-end="78" vertical-scroll-proportion="0.093612336" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lw1/css/sun.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="28" selection-start="343" selection-end="343" vertical-scroll-proportion="0.50550663">
-          <folding />
-        </state>
+        <state line="27" column="28" selection-start="343" selection-end="343" vertical-scroll-proportion="0.50550663" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lw1/js/classes/ElementInterface.class.js">
@@ -557,23 +524,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/lw1/js/classes/object/ObjectElement.class.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="26" selection-start="26" selection-end="26" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="0" column="26" selection-start="26" selection-end="26" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lw1/js/classes/weather/Rain.class.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="20" selection-start="20" selection-end="20" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="0" column="20" selection-start="20" selection-end="20" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lw1/js/classes/weather/Sun.class.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="23" selection-start="160" selection-end="160" vertical-scroll-proportion="0.18722467">
-          <folding />
-        </state>
+        <state line="10" column="23" selection-start="160" selection-end="160" vertical-scroll-proportion="0.18722467" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lw1/js/classes/weather/WeatherElement.class.js">
@@ -590,6 +551,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/lw1/js/classes/locality/Plain.class.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="41" selection-start="237" selection-end="237" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/lw1/js/classes/object/Grass.class.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="59" column="0" selection-start="1407" selection-end="1407" vertical-scroll-proportion="0.0">
@@ -599,21 +567,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/lw1/js/classes/locality/LocalityElement.class.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="4" selection-start="806" selection-end="806" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lw1/js/classes/locality/Plain.class.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="28" selection-start="573" selection-end="573" vertical-scroll-proportion="0.0">
+        <state line="59" column="0" selection-start="1563" selection-end="1563" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lw1/js/classes/Context.class.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="41" column="20" selection-start="959" selection-end="959" vertical-scroll-proportion="0.76762116">
+        <state line="26" column="28" selection-start="696" selection-end="696" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lw1/css/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="33" column="0" selection-start="409" selection-end="409" vertical-scroll-proportion="0.4944934">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lw1/js/IndexPage.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="38" selection-start="617" selection-end="617" vertical-scroll-proportion="0.3370044">
           <folding />
         </state>
       </provider>
