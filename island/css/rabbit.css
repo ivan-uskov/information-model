@@ -1,9 +1,9 @@
 .rabbit
 {
-    /*background: url('../img/grass_sprite.png') repeat-y 0 0;*/
-    background: red;
-    width: 20%;
-    height: 20%;
+    background: url('../img/rabbit_sprite.png') repeat-y 0 0;
+    background-size: 100% 400%;
+    width: 40%;
+    height: 40%;
     position: absolute;
     left: 0;
     bottom: 0;
@@ -11,24 +11,20 @@
 
 .rabbit.size0
 {
-    /*background-position: 0 0;*/
-    opacity: 0;
+    background-position: 0 0;
 }
 
 .rabbit.size1
 {
-    /*background-position: 0 -200px;*/
-    opacity: 0.5;
+    background-position: 0 33%;
 }
 
 .rabbit.size2
 {
-    /*background-position: 0 -400px;*/
-    opacity: 0.7;
+    background-position: 0 66.6%;
 }
 
 .rabbit.size3
 {
-    /*background-position: 0 -600px;*/
-    opacity: 1;
+    background-position: 0 100%;
 }
