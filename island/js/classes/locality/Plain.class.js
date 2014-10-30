@@ -16,7 +16,7 @@ var Plain = LocalityElement.extend({
         var rabbitHtmlString = ContextBuilder.getElementHtmlString(id, Rabbit.CSS_CLASSES);
         this.getDomObject().append(rabbitHtmlString);
         this._rabbits = new Rabbit(id);
-        this._rabbits.render(Grass.LEVEL_SIZES.MAX_LEVEL);
+        this._rabbits.update();
     },
 
     _addGrass: function()

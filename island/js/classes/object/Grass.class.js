@@ -8,6 +8,7 @@ var Grass = ObjectElement.extend({
         this.base(elementId);
 
         this._state = Grass.STATE_VALUES.NONE;
+        this.setLevel(this._getStartLevel());
     },
 
     _increaseLevel: function()
@@ -114,6 +115,11 @@ var Grass = ObjectElement.extend({
         {
             this._state = Grass.STATE_VALUES.NONE;
         }
+    },
+
+    _getStartLevel: function()
+    {
+          return parseInt(Math.random() * (Grass.LEVEL_SIZES.MAX_LEVEL + 1));
     },
 
     update: function()

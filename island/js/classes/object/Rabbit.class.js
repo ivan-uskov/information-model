@@ -3,28 +3,23 @@ var Rabbit = ObjectElement.extend({
     constructor: function(elementId)
     {
         this.base(elementId);
-        this.setLevel(Rabbit.MAX_LEVEL);
+        this.setLevel(Rabbit.LEVEL_SIZES.MAX_LEVEL);
     },
 
     update: function()
     {
         this.updateLevelCssClass();
-
     },
 
     _processLevel: function(grassLevel)
     {
         var level = this.getLevel();
-        if (level > grassLevel)
+
+        if ((level > grassLevel) || (grassLevel == Grass.LEVEL_SIZES.MAX_LEVEL))
         {
             this.setLevel(--level);
         }
-    },
-
-    _processReproduction: function()
-    {
-        var level = this.getLevel();
-        if (level == Rabbit.REPRODUCT_LEVEL)
+        else if (level == Rabbit.REPRODUCT_LEVEL)
         {
             this.setLevel(++level);
         }
@@ -32,11 +27,8 @@ var Rabbit = ObjectElement.extend({
 
     render: function(grassLevel)
     {
-        this._processReproduction();
         this._processLevel(grassLevel);
-        //this.setLevel(grassLevel);
         this.update();
-        console.log(this.getLevel());
     }
 
 }, {
