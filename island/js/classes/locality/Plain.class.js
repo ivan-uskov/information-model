@@ -1,11 +1,22 @@
 var Plain = LocalityElement.extend({
     _grass: null,
+    _rabbits: null,
 
     constructor: function(elementId)
     {
         this.base(elementId);
 
         this._addGrass();
+        this._addRabbits();
+    },
+
+    _addRabbits: function()
+    {
+        var id = Rabbit.ID_PREFIX + this.id.replace(/\D/g, '');
+        var rabbitHtmlString = ContextBuilder.getElementHtmlString(id, Rabbit.CSS_CLASSES);
+        this.getDomObject().append(rabbitHtmlString);
+        this._rabbits = new Rabbit(id);
+        this._rabbits.render(Grass.LEVEL_SIZES.MAX_LEVEL);
     },
 
     _addGrass: function()
@@ -20,11 +31,17 @@ var Plain = LocalityElement.extend({
         this._grass.render(this.sun.getLevel(), this.rain.getLevel());
     },
 
+    _renderRabbits: function()
+    {
+        this._rabbits.render(this._grass.getLevel());
+    },
+
     render: function()
     {
         this.base();
 
         this._renderGrass();
+        this._renderRabbits();
     }
 },
 {

@@ -3,27 +3,27 @@
     background: url('../img/grass_sprite.png') repeat-y 0 0;
 }
 
-.size0
+.grass.size0
 {
     background-position: 0 0;
 }
 
-.size1
+.grass.size1
 {
     background-position: 0 -200px;
 }
 
-.size2
+.grass.size2
 {
     background-position: 0 -400px;
 }
 
-.size3
+.grass.size3
 {
     background-position: 0 -600px;
 }
 
-.size4
+.grass.size4
 {
     background-position: 0 -800px;
 }

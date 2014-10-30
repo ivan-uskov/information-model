@@ -1,7 +1,6 @@
 var Grass = ObjectElement.extend({
     /* 0 = decrease | ! = increase */
     _state: null,
-    _level: null,
     _currentSizeClass: null,
 
     constructor: function(elementId)
@@ -11,24 +10,13 @@ var Grass = ObjectElement.extend({
         this._state = Grass.STATE_VALUES.NONE;
     },
 
-    updateLevelCssClass: function()
-    {
-        var neededSizeClass = Grass.getSizeClassBySize(this._level);
-        if (this._currentSizeClass != neededSizeClass)
-        {
-            var domObject = this.getDomObject();
-            domObject.removeClass(this._currentSizeClass);
-            domObject.addClass(neededSizeClass);
-            this._currentSizeClass = neededSizeClass;
-        }
-    },
-
     _increaseLevel: function()
     {
-        var canIncrease = (this._level < Grass.LEVEL_SIZES.MAX_LEVEL);
+        var level = this.getLevel();
+        var canIncrease = (level < Grass.LEVEL_SIZES.MAX_LEVEL);
         if (canIncrease)
         {
-            this._level++;
+            this.setLevel(++level);
             this.update();
         }
         return canIncrease;
@@ -36,10 +24,11 @@ var Grass = ObjectElement.extend({
 
     _decreaseLevel: function()
     {
-        var canDecrease = (this._level > Grass.LEVEL_SIZES.MIN_LEVEL);
+        var level = this.getLevel();
+        var canDecrease = (level > Grass.LEVEL_SIZES.MIN_LEVEL);
         if (canDecrease)
         {
-            this._level--;
+            this.setLevel(--level);
             this.update();
         }
         return canDecrease;
@@ -47,12 +36,12 @@ var Grass = ObjectElement.extend({
 
     _setMinLevel: function()
     {
-        this._level = WeatherElement.LEVEL_SIZES.MIN_LEVEL;
+        this.setLevel(WeatherElement.LEVEL_SIZES.MIN_LEVEL);
     },
 
     _setMaxLevel: function()
     {
-        this._level = WeatherElement.LEVEL_SIZES.MAX_LEVEL;
+        this.setLevel(WeatherElement.LEVEL_SIZES.MAX_LEVEL);
     },
 
     _changeLevelByState: function()
@@ -142,8 +131,8 @@ var Grass = ObjectElement.extend({
 {
     LEVEL_SIZES:
     {
-        MIN_LEVEL:   0,
-        MAX_LEVEL:   4
+        MIN_LEVEL: 0,
+        MAX_LEVEL: 4
     },
 
     STATE_VALUES:
@@ -154,31 +143,5 @@ var Grass = ObjectElement.extend({
         DEAD:     3
     },
 
-
-    CSS_DEFAULT_CLASS: 'grass',
-    CSS_LEVEL_CLASSES:
-    {
-        SIZE0: 'size0',
-        SIZE1: 'size1',
-        SIZE2: 'size2',
-        SIZE3: 'size3',
-        SIZE4: 'size4'
-    },
-
-    getSizeClassBySize: function(size)
-    {
-        switch (size)
-        {
-            case 4:
-                return this.CSS_LEVEL_CLASSES.SIZE4;
-            case 3:
-                return this.CSS_LEVEL_CLASSES.SIZE3;
-            case 2:
-                return this.CSS_LEVEL_CLASSES.SIZE2;
-            case 1:
-                return this.CSS_LEVEL_CLASSES.SIZE1;
-            default:
-                return this.CSS_LEVEL_CLASSES.SIZE0;
-        }
-    }
+    CSS_DEFAULT_CLASS: 'grass'
 });
