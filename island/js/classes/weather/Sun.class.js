@@ -11,7 +11,6 @@ var Sun = WeatherElement.extend({
         var domObject = this.getDomObject();
         var originalWidth = domObject.width();
         var originalHeight = domObject.height();
-        console.log(originalWidth + ' ' + originalHeight );
 
         if (originalWidth < originalHeight)
         {
