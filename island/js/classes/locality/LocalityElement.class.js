@@ -3,10 +3,12 @@ var LocalityElement = ElementInterface.extend({
     id:   null,
     sun:  null,
     rain: null,
+    _modifier: null,
 
-    constructor: function(elementId)
+    constructor: function(elementId, modifier)
     {
         this.id = elementId;
+        this._modifier = modifier;
 
         this.base(elementId);
 
@@ -62,6 +64,16 @@ var LocalityElement = ElementInterface.extend({
     {
         var weatherChangeId = WeatherRandom.getRandomEvent();
         this._processWeatherEventByCode(weatherChangeId);
+    },
+
+    setModifier: function(modifier)
+    {
+        this._modifier = modifier;
+    },
+
+    getModifier: function()
+    {
+        return this._modifier;
     },
 
     render: function()

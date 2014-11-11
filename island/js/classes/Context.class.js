@@ -39,5 +39,5 @@ var Context = Base.extend({
     }
 },
 {
-    FRAME_TIMEOUT: 2000
+    FRAME_TIMEOUT: 4000
 });

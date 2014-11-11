@@ -16,6 +16,11 @@ var ObjectElement = ElementInterface.extend({
     updateLevelCssClass: function()
     {
         var neededSizeClass = ObjectElement.getSizeClassByLevel(this._level);
+        if (neededSizeClass === false)
+        {
+            alert('level' + this._level);
+            alert(this.changeStateFunc);
+        }
         if (this._currentSizeClass != neededSizeClass)
         {
             var domObject = this.getDomObject();
@@ -51,18 +56,22 @@ var ObjectElement = ElementInterface.extend({
         SIZE4: 'size4'
     },
 
-    getSizeClassByLevel: function (size)
+    getSizeClassByLevel: function(size)
     {
         switch (size)
         {
+            case 4:
+                return this.CSS_LEVEL_CLASSES.SIZE4;
             case 3:
                 return this.CSS_LEVEL_CLASSES.SIZE3;
             case 2:
                 return this.CSS_LEVEL_CLASSES.SIZE2;
             case 1:
                 return this.CSS_LEVEL_CLASSES.SIZE1;
-            default:
+            case 0:
                 return this.CSS_LEVEL_CLASSES.SIZE0;
+            default:
+                return false;
         }
     }
 });

@@ -1,8 +1,8 @@
 var Mountain = LocalityElement.extend({
 
-    constructor: function(elementId)
+    constructor: function(elementId, modifier)
     {
-        this.base(elementId);
+        this.base(elementId, modifier);
     }
 
 },
@@ -10,6 +10,7 @@ var Mountain = LocalityElement.extend({
     DESCRIPTION:
     {
         NAME: 'Mountain',
-        CSS_DEFAULT_CLASS_NAME: 'mountain_cell'
+        CSS_DEFAULT_CLASS_NAME: 'mountain_cell',
+        MODIFIER: 'NONE'
     }
 });

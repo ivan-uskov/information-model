@@ -2,13 +2,15 @@ var Grass = ObjectElement.extend({
     /* 0 = decrease | ! = increase */
     _state: null,
     _currentSizeClass: null,
+    changeStateFunc: null,
 
     constructor: function(elementId)
     {
         this.base(elementId);
 
-        this._state = Grass.STATE_VALUES.NONE;
+        this._state = Grass.STATE_VALUES.INCREASE;
         this.setLevel(this._getStartLevel());
+        this.changeStateFunc = this._changeStateBySunRainLevel;
     },
 
     _increaseLevel: function()
@@ -18,7 +20,6 @@ var Grass = ObjectElement.extend({
         if (canIncrease)
         {
             this.setLevel(++level);
-            this.update();
         }
         return canIncrease;
     },
@@ -26,11 +27,11 @@ var Grass = ObjectElement.extend({
     _decreaseLevel: function()
     {
         var level = this.getLevel();
+        console.log(level);
         var canDecrease = (level > Grass.LEVEL_SIZES.MIN_LEVEL);
         if (canDecrease)
         {
             this.setLevel(--level);
-            this.update();
         }
         return canDecrease;
     },
@@ -117,6 +118,27 @@ var Grass = ObjectElement.extend({
         }
     },
 
+    setCoastSpecifies: function()
+    {
+        this.changeStateFunc = this._changeStateBySunRainLevelAroundCoast;
+    },
+
+    _changeStateBySunRainLevelAroundCoast: function(sunLevel, rainLevel)
+    {
+        if (sunLevel > WeatherElement.LEVEL_SIZES.MIN_LEVEL)
+        {
+            this._state = Grass.STATE_VALUES.INCREASE;
+        }
+        else if (rainLevel == WeatherElement.LEVEL_SIZES.MAX_LEVEL)
+        {
+            this._state = Grass.STATE_VALUES.DECREASE;
+        }
+        else
+        {
+            this._state = Grass.STATE_VALUES.NONE;
+        }
+    },
+
     _getStartLevel: function()
     {
           return parseInt(Math.random() * (Grass.LEVEL_SIZES.MAX_LEVEL + 1));
@@ -130,7 +152,7 @@ var Grass = ObjectElement.extend({
     render: function(sunLevel, rainLevel)
     {
         this._changeLevelByState();
-        this._changeStateBySunRainLevel(sunLevel, rainLevel);
+        this.changeStateFunc(sunLevel, rainLevel);
         this.update();
     }
 },

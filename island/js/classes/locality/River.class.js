@@ -1,8 +1,8 @@
 var River = LocalityElement.extend({
 
-    constructor: function(elementId)
+    constructor: function(elementId, modifier)
     {
-        this.base(elementId);
+        this.base(elementId, modifier);
     }
 
 },
@@ -10,6 +10,7 @@ var River = LocalityElement.extend({
     DESCRIPTION:
     {
         NAME: 'River',
-        CSS_DEFAULT_CLASS_NAME: 'river_cell'
+        CSS_DEFAULT_CLASS_NAME: 'river_cell',
+        MODIFIER: 'NONE'
     }
 });

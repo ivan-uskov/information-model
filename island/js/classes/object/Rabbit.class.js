@@ -1,5 +1,7 @@
 var Rabbit = ObjectElement.extend({
 
+    _manager: null,
+
     constructor: function(elementId)
     {
         this.base(elementId);
@@ -15,7 +17,12 @@ var Rabbit = ObjectElement.extend({
     {
         var level = this.getLevel();
 
-        if ((level > grassLevel) || (grassLevel == Grass.LEVEL_SIZES.MAX_LEVEL))
+        if (this._manager.tryEatGrass(level))
+        {
+
+        }
+
+        if ((level > grassLevel))
         {
             this.setLevel(--level);
         }
@@ -23,6 +30,11 @@ var Rabbit = ObjectElement.extend({
         {
             this.setLevel(++level);
         }
+    },
+
+    addManager: function(manager)
+    {
+        this._manager = manager;
     },
 
     render: function(grassLevel)

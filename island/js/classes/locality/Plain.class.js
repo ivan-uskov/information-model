@@ -2,12 +2,17 @@ var Plain = LocalityElement.extend({
     _grass: null,
     _rabbits: null,
 
-    constructor: function(elementId)
+    constructor: function(elementId, modifier)
     {
-        this.base(elementId);
+        this.base(elementId, modifier);
 
         this._addGrass();
         this._addRabbits();
+
+        if (this.getModifier() == Plain.COAST_DESCRIPTION.MODIFIER)
+        {
+            this._grass.setCoastSpecifies();
+        }
     },
 
     _addRabbits: function()
@@ -17,6 +22,9 @@ var Plain = LocalityElement.extend({
         this.getDomObject().append(rabbitHtmlString);
         this._rabbits = new Rabbit(id);
         this._rabbits.update();
+
+        this._rabbitManager = new RabbitManager(this, this._rabbits);
+        this._rabbits.addManager(this._rabbitManager);
     },
 
     _addGrass: function()
@@ -36,18 +44,31 @@ var Plain = LocalityElement.extend({
         this._rabbits.render(this._grass.getLevel());
     },
 
+    getGrass: function()
+    {
+        return this._grass;
+    },
+
     render: function()
     {
-        this.base();
-
         this._renderGrass();
         this._renderRabbits();
+
+        this.base();
     }
 },
 {
     DESCRIPTION:
     {
         NAME: 'Plain',
-        CSS_DEFAULT_CLASS_NAME: 'plain_cell'
+        CSS_DEFAULT_CLASS_NAME: 'plain_cell',
+        MODIFIER: 'NONE'
+    },
+
+    COAST_DESCRIPTION:
+    {
+        NAME: 'Plain',
+        CSS_DEFAULT_CLASS_NAME: 'plain_cell',
+        MODIFIER: 'COAST'
     }
 });

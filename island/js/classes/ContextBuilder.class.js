@@ -37,7 +37,8 @@ var ContextBuilder = Base.extend({
         return {
             id: id,
             name: name,
-            stringValue: this._getElementStringById(id, cssClassName)
+            stringValue: this._getElementStringById(id, cssClassName),
+            modifier: eltDescription.MODIFIER
         };
     },
 
@@ -67,7 +68,7 @@ var ContextBuilder = Base.extend({
         var newObjects = [];
         for (var i = 0; i < elements.length; i++)
         {
-            var newObj = LocalityFactory.newLocality(elements[i].name, elements[i].id);
+            var newObj = LocalityFactory.newLocality(elements[i].name, elements[i].id, elements[i].modifier);
             newObjects.push(newObj);
         }
         return newObjects;
