@@ -17,19 +17,21 @@ var Rabbit = ObjectElement.extend({
     {
         var level = this.getLevel();
 
-        if (this._manager.tryEatGrass(level))
-        {
-
-        }
-
         if ((level > grassLevel))
         {
             this.setLevel(--level);
         }
-        else if (level == Rabbit.REPRODUCT_LEVEL)
+        else
+        {
+            this._manager.eatGrass(level)
+        }
+
+        if (level == Rabbit.REPRODUCT_LEVEL)
         {
             this.setLevel(++level);
         }
+
+
     },
 
     addManager: function(manager)

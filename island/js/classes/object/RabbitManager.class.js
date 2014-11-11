@@ -10,16 +10,9 @@ var RabbitManager = Base.extend({
         this._grass = this._plain.getGrass();
     },
 
-    tryEatGrass: function(size)
+    eatGrass: function(size)
     {
-        var grassLevel = this._grass.getLevel();
-        if (grassLevel > size)
-        {
-            return false;
-        }
-
-        this._grass.setLevel(grassLevel - size);
+        this._grass.setLevel(this._grass.getLevel() - size);
         this._grass.update();
-        return true;
     }
 });
