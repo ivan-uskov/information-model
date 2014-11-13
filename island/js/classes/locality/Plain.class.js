@@ -8,6 +8,7 @@ var Plain = LocalityElement.extend({
 
         this._addGrass();
         this._addRabbits();
+        this._addHunters();
 
         if (this.getModifier() == Plain.COAST_DESCRIPTION.MODIFIER)
         {
@@ -32,6 +33,15 @@ var Plain = LocalityElement.extend({
         this._grass = new Grass(this.id);
         this._grass.render(this.sun.getLevel(), this.rain.getLevel());
         this.getDomObject().addClass(Grass.CSS_DEFAULT_CLASS);
+    },
+
+    _addHunters: function()
+    {
+        var id = Hunter.ID_PREFIX + this.id.replace(/\D/g, '');
+        var rabbitHtmlString = ContextBuilder.getElementHtmlString(id, Hunter.CSS_CLASSES);
+        this.getDomObject().append(rabbitHtmlString);
+        this._hunters = new Hunter(id);
+        this._hunters.update();
     },
 
     _renderGrass: function()
