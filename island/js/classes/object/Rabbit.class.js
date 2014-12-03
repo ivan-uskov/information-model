@@ -15,11 +15,12 @@ var Rabbit = ObjectElement.extend({
 
     _processLevel: function(grassLevel)
     {
+        var changes = {};
         var level = this.getLevel();
-
-        if ((level > grassLevel))
+        if ((level - grassLevel > 0))
         {
             this.setLevel(--level);
+            changes.rabbit = Math.abs(level - grassLevel);
         }
         else
         {
@@ -30,6 +31,7 @@ var Rabbit = ObjectElement.extend({
                 this.setLevel(++level);
             }
         }
+        return changes;
     },
 
     addManager: function(manager)
@@ -39,8 +41,9 @@ var Rabbit = ObjectElement.extend({
 
     render: function(grassLevel)
     {
-        this._processLevel(grassLevel);
+        var changes = this._processLevel(grassLevel);
         this.update();
+        return changes;
     }
 
 }, {

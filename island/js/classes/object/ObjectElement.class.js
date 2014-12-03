@@ -18,8 +18,8 @@ var ObjectElement = ElementInterface.extend({
         var neededSizeClass = ObjectElement.getSizeClassByLevel(this._level);
         if (neededSizeClass === false)
         {
-            alert('level' + this._level);
-            alert(this.changeStateFunc);
+            //alert('level' + this._level);
+            //alert(this.changeStateFunc);
         }
         if (this._currentSizeClass != neededSizeClass)
         {

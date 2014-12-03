@@ -7,11 +7,11 @@ var LocalityFactory = Base.extend({
         switch (name)
         {
             case Mountain.DESCRIPTION.NAME:
-                return new Mountain(id, modifier);
+                return new Mountain(id, modifier, name);
             case River.DESCRIPTION.NAME:
-                return new River(id, modifier);
+                return new River(id, modifier, name);
             default:
-                return new Plain(id, modifier);
+                return new Plain(id, modifier, name);
         }
     }
 });

@@ -1,8 +1,17 @@
 var River = LocalityElement.extend({
 
-    constructor: function(elementId, modifier)
+     type: null,
+
+    constructor: function(elementId, modifier, name)
     {
+        this.type = name;
         this.base(elementId, modifier);
+    },
+
+    render: function()
+    {
+        this.base();
+        return {};
     }
 
 },
