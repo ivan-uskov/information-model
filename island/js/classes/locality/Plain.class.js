@@ -1,6 +1,7 @@
 var Plain = LocalityElement.extend({
     _grass: null,
     _rabbits: null,
+    _wolfs: null,
     type: null,
 
     constructor: function(elementId, modifier, name)
@@ -11,6 +12,7 @@ var Plain = LocalityElement.extend({
         this._addGrass();
         this._addRabbits();
         this._addHunters();
+        this._addWolfs();
 
         if (this.getModifier() == Plain.COAST_DESCRIPTION.MODIFIER)
         {
@@ -44,6 +46,15 @@ var Plain = LocalityElement.extend({
         this.getDomObject().append(rabbitHtmlString);
         this._hunters = new Hunter(id);
         this._hunters.update();
+    },
+
+    _addWolfs: function()
+    {
+        var id = Wolf.ID_PREFIX + this.id.replace(/\D/g, '');
+        var wolfHtmlString = ContextBuilder.getElementHtmlString(id, Wolf.CSS_CLASSES);
+        this.getDomObject().append(wolfHtmlString);
+        this._wolfs = new Wolf(id);
+        this._wolfs.update();
     },
 
     accumulateRabbit: function(size)
@@ -82,6 +93,26 @@ var Plain = LocalityElement.extend({
     {
         this._renderGrass();
         var changes = this._renderRabbits();
+
+        var hunters = this._hunters.getLevel();
+        var wolfs = this._wolfs.getLevel();
+        if (hunters > wolfs)
+        {
+            this._wolfs.setLevel(--wolfs);
+            this._wolfs.updateLevelCssClass();
+        }
+        else
+        {
+            this._hunters.setLevel(--hunters);
+            this._hunters.updateLevelCssClass();
+        }
+
+        if (wolfs > 0)
+        {
+            var rabbits = this._rabbits.getLevel();
+            this._rabbits.setLevel(rabbits - wolfs > 0 ? rabbits - wolfs : 0);
+        }
+
         this.base();
         return changes;
     }

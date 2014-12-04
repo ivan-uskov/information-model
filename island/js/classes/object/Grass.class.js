@@ -19,7 +19,7 @@ var Grass = ObjectElement.extend({
         var canIncrease = (level < Grass.LEVEL_SIZES.MAX_LEVEL);
         if (canIncrease)
         {
-            this.setLevel(++level);
+            this.setLevel(level + 1);
         }
         return canIncrease;
     },
@@ -27,7 +27,6 @@ var Grass = ObjectElement.extend({
     _decreaseLevel: function()
     {
         var level = this.getLevel();
-        console.log(level);
         var canDecrease = (level > Grass.LEVEL_SIZES.MIN_LEVEL);
         if (canDecrease)
         {
@@ -68,34 +67,14 @@ var Grass = ObjectElement.extend({
 
     _checkNeedStateIncrease: function(sunLevel, rainLevel)
     {
-        return (rainLevel == 1 && sunLevel == 1) ||
-               (rainLevel == 2 && sunLevel == 1) ||
-               (rainLevel == 1 && sunLevel == 2) ||
-               (rainLevel == 2 && sunLevel == 2) ||
-               (rainLevel == 3 && sunLevel == 2) ||
-               (rainLevel == 2 && sunLevel == 3) ||
-               (rainLevel == 3 && sunLevel == 3);
+        return (rainLevel > 0) ||
+               (sunLevel > 0) ||
+               (!(rainLevel == 3 && sunLevel == 1));
     },
 
     _checkNeedStateDecrease: function(sunLevel, rainLevel)
     {
         return (rainLevel == 0 && sunLevel == 3);
-    },
-
-    _checkNeedStateNone: function(sunLevel, rainLevel)
-    {
-        return (rainLevel == 0 && sunLevel == 0) ||
-               (rainLevel == 1 && sunLevel == 0) ||
-               (rainLevel == 2 && sunLevel == 0) ||
-               (rainLevel == 0 && sunLevel == 1) ||
-               (rainLevel == 3 && sunLevel == 1) ||
-               (rainLevel == 0 && sunLevel == 2) ||
-               (rainLevel == 1 && sunLevel == 3);
-    },
-
-    _checkNeedStateDead: function(sunLevel, rainLevel)
-    {
-        return (rainLevel == 3 && sunLevel == 0);
     },
 
     _changeStateBySunRainLevel: function(sunLevel, rainLevel)
@@ -108,11 +87,7 @@ var Grass = ObjectElement.extend({
         {
             this._state = Grass.STATE_VALUES.DECREASE;
         }
-        else if (this._checkNeedStateDead(sunLevel, rainLevel))
-        {
-            this._state = Grass.STATE_VALUES.DEAD;
-        }
-        else if (this._checkNeedStateNone(sunLevel, rainLevel))
+        else
         {
             this._state = Grass.STATE_VALUES.NONE;
         }

@@ -1,9 +1,9 @@
-var Wolf= ObjectElement.extend({
+var Wolf = ObjectElement.extend({
 
     constructor: function(elementId)
     {
         this.base(elementId);
-        this.setLevel(Wolf.LEVEL_SIZES.MAX_LEVEL);
+        this.setLevel(ObjectRandom.getRandomEvent(Wolf.LEVEL_SIZES.MAX_LEVEL));
     },
 
     update: function()
@@ -30,6 +30,11 @@ var Wolf= ObjectElement.extend({
 
     render: function(rabbitLevel)
     {
+        if (level == Wolf.REPRODUCT_LEVEL)
+        {
+            this.setLevel(++level);
+        }
+
         this._processLevel(rabbitLevel);
         this.update();
     }

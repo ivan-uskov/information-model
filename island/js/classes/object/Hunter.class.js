@@ -3,7 +3,7 @@ var Hunter = ObjectElement.extend({
     constructor: function(elementId)
     {
         this.base(elementId);
-        this.setLevel(Hunter.LEVEL_SIZES.MAX_LEVEL);
+        this.setLevel(ObjectRandom.getRandomEvent(Hunter.LEVEL_SIZES.MAX_LEVEL));
     },
 
     update: function()

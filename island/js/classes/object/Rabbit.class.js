@@ -5,7 +5,7 @@ var Rabbit = ObjectElement.extend({
     constructor: function(elementId)
     {
         this.base(elementId);
-        this.setLevel(Rabbit.LEVEL_SIZES.MAX_LEVEL);
+        this.setLevel(ObjectRandom.getRandomEvent(Rabbit.LEVEL_SIZES.MAX_LEVEL));
     },
 
     update: function()
