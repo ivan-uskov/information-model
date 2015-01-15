@@ -74,6 +74,24 @@ var Plain = LocalityElement.extend({
         return true;
     },
 
+    increaseRabbits: function()
+    {
+        this._rabbits.setLevel(this._rabbits.getLevel() + ObjectRandom.getRandomEvent(Rabbit.LEVEL_SIZES.MAX_LEVEL));
+        this._rabbits.updateLevelCssClass();
+    },
+
+    increaseWolfs: function()
+    {
+        this._wolfs.setLevel(this._wolfs.getLevel() + ObjectRandom.getRandomEvent(Wolf.LEVEL_SIZES.MAX_LEVEL));
+        this._wolfs.updateLevelCssClass();
+    },
+
+    increaseHunters: function()
+    {
+        this._hunters.setLevel(this._hunters.getLevel() + ObjectRandom.getRandomEvent(Hunter.LEVEL_SIZES.MAX_LEVEL));
+        this._hunters.updateLevelCssClass();
+    },
+
     _renderGrass: function()
     {
         this._grass.render(this.sun.getLevel(), this.rain.getLevel());
@@ -96,21 +114,30 @@ var Plain = LocalityElement.extend({
 
         var hunters = this._hunters.getLevel();
         var wolfs = this._wolfs.getLevel();
-        if (hunters > wolfs)
+        var rabbits = this._rabbits.getLevel();
+
+        if (hunters > wolfs && wolfs > 0)
         {
             this._wolfs.setLevel(--wolfs);
             this._wolfs.updateLevelCssClass();
         }
-        else
+        else if (hunters < wolfs && hunters > 0)
         {
             this._hunters.setLevel(--hunters);
             this._hunters.updateLevelCssClass();
         }
-
-        if (wolfs > 0)
+        else
         {
-            var rabbits = this._rabbits.getLevel();
-            this._rabbits.setLevel(rabbits - wolfs > 0 ? rabbits - wolfs : 0);
+            if (wolfs > 0)
+            {
+                this._rabbits.setLevel(--rabbits);
+            }
+
+            if (hunters > 0)
+            {
+                this._rabbits.setLevel(--rabbits);
+            }
+            this._rabbits.updateLevelCssClass();
         }
 
         this.base();

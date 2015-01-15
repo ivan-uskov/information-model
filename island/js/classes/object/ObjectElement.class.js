@@ -5,7 +5,14 @@ var ObjectElement = ElementInterface.extend({
 
     setLevel: function(newLevel)
     {
-        this._level = newLevel;
+        if (newLevel > 3)
+        {
+            this._level = 3;
+        }
+        else
+        {
+            this._level = newLevel > 0 ? newLevel : 0;
+        }
     },
 
     getLevel: function()

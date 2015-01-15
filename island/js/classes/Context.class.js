@@ -30,32 +30,38 @@ var Context = Base.extend({
     _initHandlers: function()
     {
         var thisPtr = this;
-        this._container.click(function(){
-            thisPtr._renderFrame();
+
+        $(document).keydown(function(e)
+        {
+            switch (e.which)
+            {
+                case 39: // ->
+                {
+                    thisPtr._renderFrame();
+                    break;
+                }
+                case 82: //R
+                {
+                    thisPtr.addRabbits();
+                    break;
+                }
+                case 87: //W
+                {
+                    thisPtr.addWolfs();
+                    break;
+                }
+                case 72: //H
+                {
+                    thisPtr.addHunters();
+                    break;
+                }
+            }
         });
     },
 
     _renderFrame: function()
     {
         this._iterateCells();
-        /*var changes = this._content[13].render();
-        console.dir(changes);
-        if (Object.keys(changes).length !== 0)
-        {
-            this._applyChanges(13, changes);
-        }
-        changes = this._content[14].render();
-        console.dir(changes);
-        if (Object.keys(changes).length !== 0)
-        {
-            this._applyChanges(14, changes);
-        }
-        changes = this._content[15].render();
-        console.dir(changes);
-        if (Object.keys(changes).length !== 0)
-        {
-            this._applyChanges(15, changes);
-        }*/
     },
 
     _iterateCells: function()
@@ -115,6 +121,50 @@ var Context = Base.extend({
             }
         }
         return minRabbitSquare;
+    },
+
+    addRabbits: function()
+    {
+        for (var i = 0; i < this._content.length; i++)
+        {
+            try
+            {
+                this._content[i].increaseRabbits();
+            }
+            catch(e)
+            {
+
+            }
+
+        }
+    },
+
+    addWolfs: function()
+    {
+        for (var i = 0; i < this._content.length; i++)
+        {
+            try
+            {
+                this._content[i].increaseWolfs();
+            }
+            catch(e)
+            {
+
+            }
+
+        }
+    },
+
+    addHunters: function()
+    {
+        for (var i = 0; i < this._content.length; i++)
+        {
+            try
+            {
+               this._content[i].increaseHunters();
+            }
+            catch(e) {}
+        }
     },
 
     _checkPlain: function(name)

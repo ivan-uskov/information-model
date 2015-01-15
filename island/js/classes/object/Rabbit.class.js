@@ -20,7 +20,7 @@ var Rabbit = ObjectElement.extend({
         if ((level - grassLevel > 0))
         {
             this.setLevel(--level);
-            changes.rabbit = Math.abs(level - grassLevel);
+            changes.rabbit = (level - grassLevel) ? (level - grassLevel) : 0;
         }
         else
         {
