@@ -12,7 +12,7 @@ var Context = Base.extend({
         this._contextBuilder = new ContextBuilder(this._container);
         this._content = this._contextBuilder.renderContext(params.field);
         this._length = params.field.length;
-      //  this._initInterval();
+
         this._initHandlers();
     },
 
@@ -35,6 +35,16 @@ var Context = Base.extend({
         {
             switch (e.which)
             {
+                case 83:
+                {
+                    thisPtr._initInterval();
+                    break;
+                }
+                case 69:
+                {
+                    thisPtr._clearInterval();
+                    break;
+                }
                 case 39: // ->
                 {
                     thisPtr._renderFrame();
@@ -151,7 +161,6 @@ var Context = Base.extend({
             {
 
             }
-
         }
     },
 
@@ -171,8 +180,7 @@ var Context = Base.extend({
     {
         return name == Plain.DESCRIPTION.NAME || name  == Plain.COAST_DESCRIPTION.NAME;
     }
-
 },
 {
-    FRAME_TIMEOUT: 4000
+    FRAME_TIMEOUT: 1000
 });

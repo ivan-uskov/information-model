@@ -5,7 +5,7 @@ var Mountain = LocalityElement.extend({
     constructor: function(elementId, modifier, name)
     {
         this.type = name;
-        this.base(elementId, modifier);
+        this.base(elementId, modifier, name);
     },
 
     render: function()

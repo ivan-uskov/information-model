@@ -7,7 +7,8 @@ var Plain = LocalityElement.extend({
     constructor: function(elementId, modifier, name)
     {
         this.type = name;
-        this.base(elementId, modifier);
+        this.base(elementId, modifier, name);
+
 
         this._addGrass();
         this._addRabbits();
